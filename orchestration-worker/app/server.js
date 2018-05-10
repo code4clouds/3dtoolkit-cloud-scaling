@@ -1,7 +1,7 @@
 'use strict'
 
-import config from 'config'
-import azure from 'azure'
+var config = require('./config.js')
+var azure = require('azure')
 
 var serviceBusService = azure.createServiceBusService(config.serviceBus.connectionsString)
 
